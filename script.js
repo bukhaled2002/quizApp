@@ -17,7 +17,7 @@ function getQuestions() {
             let questionsObject=JSON.parse(this.responseText)
             addBullets(questionsObject.length)
             addQuestions(questionsObject[current],questionsObject.length);
-            time(3,questionsObject.length);
+            time(60,questionsObject.length);
             submit.onclick=()=>{
                 // time(3,questionsObject.length);
                 let theRightAnswer = questionsObject[current].right_answer;
